@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <title>Iris_Model</title>
+  <script src="js/libraries/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="c3.min.css">
+  <script src="js/libraries/d3.min.js"></script>
+  <script src="js/libraries/c3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <!-- <script src="js/libraries/d3.js"></script> -->
+  <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/global.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container box">
+
+
+    <div class="panels-container box">
+      <div class="panels">
+
+        <div class="panel" >
+          <h4>Welcome to the amtli-manager.
+            This first thinking toy will give you a glimpse of how work influences a community, and how group dynamics
+            work. You can choose to participate in the community as a single agent or as group. The app will give you
+            sensorial feedback on how the community is doing, and will ask you to intervene in some matters. Remember
+            that to achieve something as a solo agent is way harder than doing it as a group.</h4>
+          <div class="btn box" data-panel="1" onclick="next(this);">
+            START
+          </div>
+        </div>
+        <div class="panel" id="communities">
+          <h4>choose your community</h4>
+        </div>
+        <div class="panel" >
+          <h4>solo or group?</h4>
+          <div class="btn box" data-panel="3" onclick="next(this); init_model(this)">solo</div>
+          <div class="btn box" data-panel="3" onclick="next(this); init_model(this)">group</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="notifications">
+
+        <div id="display-date" class="date-container"></div>
+        <div class="push-container"></div>
+    </div>
+  </div>
+  
+  <div class="help-tip box"></div>
+  <script src="js/form.js"></script>
+  <!-- <script src="js/load_save.js"></script> -->
+  <script src="js/model.js"></script>
+  <!-- <script src="js/plot.js"></script> -->
+  <script src="js/index.js"></script>
+  <!-- <div id="whatFrameRate" style="position: fixed; top: 0px; left: 0px;"></div> -->
+</body>
+
+</html>
