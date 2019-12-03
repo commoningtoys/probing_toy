@@ -9,4 +9,4 @@
 
 ## Description
 
-This thinking toy serves as first step into the Ämtli Manager
+This thinking toy serves as first step into the Ämtli Manager. It is developed as a probing tool to haptically and visually re-enact the decisions an agent takes in community.
